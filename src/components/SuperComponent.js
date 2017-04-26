@@ -16,7 +16,7 @@ function SuperComponent(props) {
   }
   return (
     <div>
-      {content}
+      <h3>{content}</h3>
     </div>
   );
 }
