@@ -64,6 +64,9 @@ function App(props) {
   );
 }
 App.propTypes = {
-  products: PropTypes.array.isRequired
+  products: PropTypes.array.isRequired,
+  names: PropTypes.array.isRequired,
+  magicNumber: PropTypes.number.isRequired,
+  contact: PropTypes.object.isRequired
 };
 export default App;
