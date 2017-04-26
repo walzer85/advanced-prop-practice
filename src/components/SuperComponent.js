@@ -22,11 +22,11 @@ function SuperComponent(props) {
 }
 
 SuperComponent.propTypes = {
-  message: PropTypes.string.isRequired,
-  magicNumber: PropTypes.number.isRequired,
-  product: PropTypes.object.isRequired,
-  products: PropTypes.array.isRequired,
-  names: PropTypes.array.isRequired
+  message: PropTypes.string,
+  magicNumber: PropTypes.number,
+  product: PropTypes.object,
+  products: PropTypes.array,
+  names: PropTypes.array
 
 };
 export default SuperComponent;
