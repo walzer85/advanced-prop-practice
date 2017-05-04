@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import PropTypes from "prop-types";
 import SuperComponent from "./components/SuperComponent";
+import Parent from "./components/Parent";
 
 /* eslint-disable no-unused-vars, no-console */
 function App(props) {
@@ -13,7 +14,7 @@ function App(props) {
   return (
     <div>
       {/* send in a prop called "message", give it the string "Hello World" */}
-      <div>This better say "Hello World": <SuperComponent /> </div>
+      <div>This better say "Hello World": <SuperComponent message={"Hello World"} /> </div>
       {/* send in a prop called "message", give it the string "Goodbye World" */}
       <div>This better say "Goodbye World": <SuperComponent /> </div>
       {/* send in a prop called "message", give it the string "Props are awesome" */}
@@ -58,8 +59,7 @@ function App(props) {
       <div>This better say "farmer": <SuperComponent /> </div>
       {/* send in a prop called "message", give it the contact.address from App's props*/}
       <div>This better say "300 MiddleOfNoWhere st Tatooine": <SuperComponent /> </div>
-
-
+      <Parent />
     </div>
   );
 }
