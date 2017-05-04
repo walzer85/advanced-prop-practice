@@ -19,7 +19,7 @@ function Parent(props) {
       <Child name={"Bob"} />
       {/* 
         React converts the above into:
-        
+
         var props = {name:"Bob"};
         Child(props)  
       */}
@@ -48,6 +48,26 @@ function Parent(props) {
         zip: "78701"
       }} />
 
+      {/* 
+        var props = {
+          name: "Ted",
+          age: 35,
+          address:{
+            street:"325 aca rd.",
+            city: "Austin",
+            zip: "78701"
+          }
+          };
+        Child(props)  
+      */}
+      <Child
+        name={"Ted"}
+        age={35} 
+        address={{
+          street: "325 aca rd.",
+          city: "Austin",
+          zip: "78701"
+        }} />
 
 
 
