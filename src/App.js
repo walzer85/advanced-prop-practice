@@ -31,13 +31,13 @@ function App(props) {
 
       {/* send in a prop called "product", give it the variable product*/}
       <div>This better say "ajax": <SuperComponent /> </div>
-      {/* send in a prop called "product", give it an object with a name property "pepsi"*/}
+      {/* send in a prop called "product", give it an object with a key of "name" and a value "pepsi"*/}
       <div>This better say "pepsi": <SuperComponent /> </div>
-      {/* send in a prop called "product", give it an object with a name property "nike"*/}
+      {/* send in a prop called "product", give it an object with a key of "name" and a value "nike"*/}
       <div>This better say "nike": <SuperComponent /> </div>
 
 
-      {/* send in a prop called "names", give it the variable names*/}
+      {/* send in a prop called "names", with the value of the variable names*/}
       <div>This better say "Bob, Stand, Todd, Ted" : <SuperComponent /> </div>
       {/* send in a prop called "names", give it an array ["Brodie","Alicia","Margo"]*/}
       <div>This better say "Brodie, Alicia, Margo" : <SuperComponent /> </div>
