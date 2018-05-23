@@ -38,27 +38,27 @@ function App(props) {
 
 
       {/* send in a prop called "names", with the value of the variable names*/}
-      <div>This better say "Bob, Stand, Todd, Ted" : <SuperComponent name={name}/> </div>
+      <div>This better say "Bob, Stand, Todd, Ted" : <SuperComponent names={names}/> </div>
       {/* send in a prop called "names", give it an array ["Brodie","Alicia","Margo"]*/}
-      <div>This better say "Brodie, Alicia, Margo" : <SuperComponent name ={["Brodie","Alicia","Margo"]}/> </div>
+      <div>This better say "Brodie, Alicia, Margo" : <SuperComponent names={["Brodie","Alicia","Margo"]}/> </div>
       {/* send in a prop called "names", give it an array ["Titus","Axel","Claire"]*/}
-      <div>This better say "Titus, Axel, Claire" : <SuperComponent name={["Titus","Axel","Claire"]}/> </div>
+      <div>This better say "Titus, Axel, Claire" : <SuperComponent names={["Titus","Axel","Claire"]}/> </div>
 
       {/* Use App's props*/}
       {/* send in a prop called "products", give it the products array from App's props*/}
-      <div>This better say "Hand Sanitizer": <SuperComponent /> </div>
+      <div>This better say "Hand Sanitizer": <SuperComponent products={props.products}/> </div>
       {/* send in a prop called "names", give it the names array from App's props*/}
-      <div>This better say "Robin, Lily, Barney": <SuperComponent /> </div>
+      <div>This better say "Robin, Lily, Barney": <SuperComponent names={props.names}/> </div>
       {/* send in a prop called "magicNumber", give it the magicNumber from App's props*/}
-      <div>This better say "99": <SuperComponent /> </div>
+      <div>This better say "99": <SuperComponent magicNumber={props.magicNumber}/> </div>
       {/* send in a prop called "message", give it the contact.firstName from App's props*/}
-      <div>This better say "Luke": <SuperComponent /> </div>
+      <div>This better say "Luke": <SuperComponent message={props.contact.firstName}/> </div>
       {/* send in a prop called "message", give it the contact.lastName from App's props*/}
-      <div>This better say "Skywalker": <SuperComponent /> </div>
+      <div>This better say "Skywalker": <SuperComponent message={props.contact.lastName}/> </div>
       {/* send in a prop called "message", give it the contact.occupation from App's props*/}
-      <div>This better say "farmer": <SuperComponent /> </div>
+      <div>This better say "farmer": <SuperComponent message={props.contact.occupation}/> </div>
       {/* send in a prop called "message", give it the contact.address from App's props*/}
-      <div>This better say "300 MiddleOfNoWhere st Tatooine": <SuperComponent /> </div>
+      <div>This better say "300 MiddleOfNoWhere st Tatooine": <SuperComponent message={props.contact.address}/> </div>
       <Parent />
     </div>
   );
