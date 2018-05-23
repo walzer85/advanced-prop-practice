@@ -32,17 +32,17 @@ function App(props) {
       {/* send in a prop called "product", give it the variable product*/}
       <div>This better say "ajax": <SuperComponent product={product}/> </div>
       {/* send in a prop called "product", give it an object with a key of "name" and a value "pepsi"*/}
-      <div>This better say "pepsi": <SuperComponent /> </div>
+      <div>This better say "pepsi": <SuperComponent product={{name: "pepsi"}}/> </div>
       {/* send in a prop called "product", give it an object with a key of "name" and a value "nike"*/}
-      <div>This better say "nike": <SuperComponent /> </div>
+      <div>This better say "nike": <SuperComponent product={{name: "nike"}}/> </div>
 
 
       {/* send in a prop called "names", with the value of the variable names*/}
-      <div>This better say "Bob, Stand, Todd, Ted" : <SuperComponent /> </div>
+      <div>This better say "Bob, Stand, Todd, Ted" : <SuperComponent name={name}/> </div>
       {/* send in a prop called "names", give it an array ["Brodie","Alicia","Margo"]*/}
-      <div>This better say "Brodie, Alicia, Margo" : <SuperComponent /> </div>
+      <div>This better say "Brodie, Alicia, Margo" : <SuperComponent name ={["Brodie","Alicia","Margo"]}/> </div>
       {/* send in a prop called "names", give it an array ["Titus","Axel","Claire"]*/}
-      <div>This better say "Titus, Axel, Claire" : <SuperComponent /> </div>
+      <div>This better say "Titus, Axel, Claire" : <SuperComponent name={["Titus","Axel","Claire"]}/> </div>
 
       {/* Use App's props*/}
       {/* send in a prop called "products", give it the products array from App's props*/}
